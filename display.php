@@ -7,7 +7,9 @@
 <body>
 <h1>1から50</h1>
 <?php
-$a = 1;
+for ($a = 1; $a <= 25; $a++) {
+	echo $a . '<br>';
+}
 while ($a <= 50) {
 	echo $a . '<br>';
 	$a++;
