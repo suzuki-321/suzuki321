@@ -40,12 +40,12 @@ if (isset($num1) && isset($num2)) {
 </head>
 <body>
 <h1>計算結果</h1>
-<?php if (isset($num1) && isset($num2) && $num2 != 0): ?>
-<p><?php echo $result; ?></p>
-<?php else: ?>
+<?php if (!empty($errors)): ?>
 <?php foreach ($errors as $error): ?>
-<p><?php echo $error; ?></p>
+<p><font color="red"><?php echo $error; ?></font></p>
 <?php endforeach; ?>
+<?php else: ?>
+<p><?php echo $result; ?></p>
 <?php endif; ?>
 </body>
 </html>

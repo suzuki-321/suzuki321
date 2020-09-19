@@ -7,7 +7,7 @@
 <body>
 <h1>計算フォーム</h1>
 <form action="result.php" method="POST">
-<label for="num1">数字1</label>
+<label for="num1"><font color="red">数字1</font></label>
 <input type="number" name="num1" required>
 <select name="operator">
 <option value="+">+</option>
@@ -15,7 +15,7 @@
 <option value="*">×</option>
 <option value="/">÷</option>
 </select>
-<label for="num2">数字2</label>
+<label for="num2"><font color="red">数字2</font></label>
 <input type="number" name="num2" required>
 =
 <input type="submit" value="計算">
