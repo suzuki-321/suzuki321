@@ -24,7 +24,7 @@ if (isset($num1) && isset($num2)) {
 			break;
 		case "/":
 			if ($num2 == 0) {
-				$result = '0で割ることはできません';
+				$errors[] = '0で割ることはできません';
 			} else {
 				$result = $num1 / $num2;
 			}
@@ -40,7 +40,7 @@ if (isset($num1) && isset($num2)) {
 </head>
 <body>
 <h1>計算結果</h1>
-<?php if (isset($num1) && isset($num2)): ?>
+<?php if (isset($num1) && isset($num2) && $num2 != 0): ?>
 <p><?php echo $result; ?></p>
 <?php else: ?>
 <?php foreach ($errors as $error): ?>

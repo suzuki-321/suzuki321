@@ -17,6 +17,7 @@
 </select>
 <label for="num2">数字2</label>
 <input type="number" name="num2" required>
+=
 <input type="submit" value="計算">
 </form>
 </body>
